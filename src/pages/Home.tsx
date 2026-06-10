@@ -10,17 +10,17 @@ export default function Home() {
     {
       icon: Shield,
       title: 'Kvaliteet',
-      description: 'Kõik tooted on testitud ja sertifitseeritud Euroopa standarditele vastavaks.',
+      description: 'Kõik tooted on testitud ja vastavad Euroopa standarditele.',
     },
     {
       icon: Truck,
       title: 'Kiire tarne',
-      description: 'Tellimused saadetakse 1-3 tööpäeva jooksul üle Eesti.',
+      description: 'Tellimused saadetakse 1–3 tööpäeva jooksul üle kogu Eesti.',
     },
     {
       icon: Headphones,
-      title: 'Nõustamine',
-      description: 'Oleme aastate jooksul kogunud kogemusi ja olevalt valmis nõustama mesindajaid.',
+      title: 'Professionaalne nõustamine',
+      description: 'Oleme aastate jooksul kogunud väärtuslikke kogemusi ja oleme alati valmis mesinikke nõustama.',
     },
   ];
 
@@ -31,10 +31,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-              Kõik mida mesindajale vaja
+              Kõik, mida mesinik vajab
             </h1>
             <p className="mt-6 text-lg md:text-xl text-primary/80">
-              Kvaliteetsed mesindustarbed, kaitseriietus ja mee töötlemise seadmed. Üle 25 aasta kogemusega Eesti mesindajate teenistuses.
+              Kvaliteetsed mesindustarbed, kaitseriietus ja mee töötlemise seadmed. Üle 25-aastase kogemusega Eesti mesinike teenistuses.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Tootekategooriad</h2>
-            <p className="mt-4 text-secondary">Vali vajalike tarvet kategooria</p>
+            <p className="mt-4 text-secondary">Vali vajalike tarvikute kategooria:</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
             {categories.map((category) => (
@@ -85,14 +85,13 @@ export default function Home() {
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary">Populaarsed tooted</h2>
-              <p className="mt-2 text-secondary">Parimad valikud mesindajatele</p>
+              <p className="mt-2 text-secondary">Parimad valikud mesinikele.</p>
             </div>
             <Link
               to="/pood"
               className="hidden md:inline-flex items-center gap-2 text-primary font-medium hover:text-amber transition-colors"
             >
-              Vaata kõiki
-              <span aria-hidden="true">&rarr;</span>
+              Vaata kõiki →
             </Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
@@ -115,8 +114,8 @@ export default function Home() {
       <section className="py-16 md:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Miks Mesila?</h2>
-            <p className="mt-4 text-secondary">Aastatepikkune kogemus ja pühendumus kvaliteedile</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Miks valida Mesila?</h2>
+            <p className="mt-4 text-secondary">Aastatepikkune kogemus ja pühendumus kvaliteedile.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
@@ -139,7 +138,7 @@ export default function Home() {
       <section className="py-16 md:py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Alusta mesindushooaja valmistumist
+            Alusta valmistumist mesindushooajaks!
           </h2>
           <p className="mt-4 text-white/80">
             Vali parimad tooted oma tarude jaoks ja naudi suve koos mesilastega.
@@ -149,7 +148,7 @@ export default function Home() {
             className="mt-8 inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors"
           >
             <ShoppingBag className="w-5 h-5" />
-            Tellin kohe
+            Telli kohe
           </Link>
         </div>
       </section>
