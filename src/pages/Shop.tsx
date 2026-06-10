@@ -37,7 +37,7 @@ export default function Shop() {
       <section className="bg-white border-b border-border py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-primary">Pood</h1>
-          <p className="mt-2 text-secondary">Leia kvaliteetsed mesindustarbed</p>
+          <p className="mt-2 text-secondary">Leia kvaliteetsed mesindustarvikud</p>
         </div>
       </section>
 
@@ -68,7 +68,7 @@ export default function Shop() {
                 : 'bg-white border border-border text-secondary hover:border-primary hover:text-primary'
             }`}
           >
-            Kõik
+            Kõik tooted
           </button>
           {categories.map((category) => (
             <button
@@ -109,7 +109,7 @@ export default function Shop() {
               }}
               className="mt-4 text-primary font-medium hover:text-amber transition-colors"
             >
-              Selgitage filtrid
+              Tühjenda filtrid
             </button>
           </div>
         )}
