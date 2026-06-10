@@ -31,7 +31,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             </span>
           ) : (
             <span className="text-xs bg-border text-secondary px-2 py-0.5 rounded-full">
-              Lõpp
+              Otsas
             </span>
           )}
         </div>
