@@ -80,7 +80,7 @@ export default function Shop() {
                   : 'bg-white border border-border text-secondary hover:border-primary hover:text-primary'
               }`}
             >
-              <span className="mr-1">{category.icon}</span>
+              <img src={category.icon} alt={category.name} className="inline w-4 h-4 mr-1 object-contain" />
               {category.name}
             </button>
           ))}

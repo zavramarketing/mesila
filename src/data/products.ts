@@ -12,11 +12,11 @@ export interface Product {
 }
 
 export const categories = [
-  { id: 'kaitseriided', name: 'Kaitserõivad', icon: '🧤' },
-  { id: 'tooriistad', name: 'Tööriistad ja tarvikud', icon: '🔧' },
-  { id: 'tarud-ja-raamid', name: 'Tarud ja raamid', icon: '🪵' },
-  { id: 'mee-koristus', name: 'Mee töötlemine', icon: '⚙️' },
-  { id: 'sootmine', name: 'Söötmine', icon: '🌿' },
+  { id: 'kaitseriided', name: 'Kaitserõivad', icon: '/icons/category-kaitseriided.png' },
+  { id: 'tooriistad', name: 'Tööriistad ja tarvikud', icon: '/icons/category-tooriistad.png' },
+  { id: 'tarud-ja-raamid', name: 'Tarud ja raamid', icon: '/icons/category-tarud-ja-raamid.png' },
+  { id: 'mee-koristus', name: 'Mee töötlemine', icon: '/icons/category-mee-koristus.png' },
+  { id: 'sootmine', name: 'Söötmine', icon: '/icons/category-sootmine.png' },
 ];
 
 export const products: Product[] = [

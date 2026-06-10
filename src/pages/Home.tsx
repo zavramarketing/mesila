@@ -69,7 +69,7 @@ export default function Home() {
                 to={`/pood?kategooria=${category.id}`}
                 className="group bg-white rounded-xl border border-border p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <span className="text-4xl">{category.icon}</span>
+                <img src={category.icon} alt={category.name} className="w-12 h-12 mx-auto object-contain" />
                 <h3 className="mt-4 font-semibold text-primary group-hover:text-amber transition-colors">
                   {category.name}
                 </h3>
