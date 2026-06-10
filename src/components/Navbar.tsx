@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img src="/logo.png" alt="Mesila" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Mesila" className="h-14 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
