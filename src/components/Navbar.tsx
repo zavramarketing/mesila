@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ShoppingBag } from 'lucide-react';
+import { useCart } from '../context/CartContext';
+import CartDropdown from './CartDropdown';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
   const location = useLocation();
+  const { totalItems } = useCart();
 
   const navLinks = [
     { name: 'Avaleht', path: '/' },
@@ -41,26 +45,53 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link
-              to="/pood"
-              className="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
+          {/* Cart Button */}
+          <div className="hidden md:block relative">
+            <button
+              onClick={() => setCartOpen((v) => !v)}
+              className="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors relative"
             >
               <ShoppingBag className="w-4 h-4" />
-              Telli nüüd
-            </Link>
+              Minu ostukorv
+              {totalItems > 0 && (
+                <span className="absolute -top-2 -right-2 bg-amber text-primary text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
+            </button>
+            {cartOpen && <CartDropdown onClose={() => setCartOpen(false)} />}
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg text-secondary hover:text-primary hover:bg-cream transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile: cart icon + burger */}
+          <div className="md:hidden flex items-center gap-3">
+            <button
+              onClick={() => setCartOpen((v) => !v)}
+              className="relative p-2 text-primary"
+              aria-label="Ostukorv"
+            >
+              <ShoppingBag className="w-6 h-6" />
+              {totalItems > 0 && (
+                <span className="absolute -top-1 -right-1 bg-amber text-primary text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
+            </button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-lg text-secondary hover:text-primary hover:bg-cream transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Cart Dropdown */}
+        {cartOpen && (
+          <div className="md:hidden pb-2 relative">
+            <CartDropdown onClose={() => setCartOpen(false)} />
+          </div>
+        )}
 
         {/* Mobile Navigation */}
         {isOpen && (
@@ -80,14 +111,6 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                to="/pood"
-                onClick={() => setIsOpen(false)}
-                className="mt-2 inline-flex items-center justify-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-medium"
-              >
-                <ShoppingBag className="w-4 h-4" />
-                Telli nüüd
-              </Link>
             </div>
           </div>
         )}
