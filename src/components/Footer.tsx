@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="overflow-hidden h-14">
+            <div className="overflow-hidden h-14 flex items-center">
               <img src="/logo.png" alt="Mesila" className="h-28 w-auto invert brightness-200" />
             </div>
             <p className="mt-4 text-white/70 max-w-md">
