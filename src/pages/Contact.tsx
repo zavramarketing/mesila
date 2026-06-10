@@ -30,8 +30,9 @@ export default function Contact() {
       {/* Header */}
       <section className="bg-white border-b border-border py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary">Kontakt</h1>
-          <p className="mt-2 text-secondary">Võta meiega ühendust</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-primary">
+            Kontakt — Võta meiega ühendust
+          </h1>
         </div>
       </section>
 
@@ -49,7 +50,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-primary">Telefon</h3>
                     <p className="text-secondary mt-1">+372 512 345 67</p>
-                    <p className="text-sm text-secondary mt-1">E-P: 9:00 - 17:00</p>
+                    <p className="text-sm text-secondary mt-1">E–P 9.00–17.00</p>
                   </div>
                 </div>
               </div>
@@ -62,7 +63,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-primary">E-post</h3>
                     <p className="text-secondary mt-1">info@mesila.ee</p>
-                    <p className="text-sm text-secondary mt-1">Vastame 24 tunni jooksul</p>
+                    <p className="text-sm text-secondary mt-1">Vastame 24 tunni jooksul.</p>
                   </div>
                 </div>
               </div>
@@ -74,8 +75,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-primary">Aadress</h3>
-                    <p className="text-secondary mt-1">Mesila tn 1, Tallinn</p>
-                    <p className="text-sm text-secondary mt-1">Eesti</p>
+                    <p className="text-secondary mt-1">Mesila tn 1, Tallinn, Eesti</p>
                   </div>
                 </div>
               </div>
@@ -101,10 +101,7 @@ export default function Contact() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-primary mb-2"
-                    >
+                    <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
                       Nimi *
                     </label>
                     <input
@@ -120,10 +117,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-primary mb-2"
-                    >
+                    <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
                       E-post *
                     </label>
                     <input
@@ -139,10 +133,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-primary mb-2"
-                    >
+                    <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">
                       Telefon
                     </label>
                     <input
@@ -157,10 +148,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-sm font-medium text-primary mb-2"
-                    >
+                    <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
                       Sõnum *
                     </label>
                     <textarea
@@ -180,7 +168,7 @@ export default function Contact() {
                     className="w-full inline-flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Send className="w-5 h-5" />
-                    Saada sõnum
+                    Saada päring
                   </button>
                 </form>
               )}
