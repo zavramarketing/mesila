@@ -1,4 +1,3 @@
-import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Minus, Plus, Trash2, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
@@ -9,23 +8,9 @@ interface CartDropdownProps {
 
 export default function CartDropdown({ onClose }: CartDropdownProps) {
   const { items, removeFromCart, updateQuantity, clearCart, totalPrice } = useCart();
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        onClose();
-      }
-    }
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [onClose]);
 
   return (
-    <div
-      ref={ref}
-      className="absolute right-0 top-full mt-2 w-96 bg-white rounded-xl border border-border shadow-xl z-50"
-    >
+    <div className="absolute right-0 top-full mt-2 w-96 bg-white rounded-xl border border-border shadow-xl z-50">
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-4 border-b border-border">
         <h3 className="font-bold text-primary text-lg">Minu ostukorv</h3>
@@ -63,7 +48,6 @@ export default function CartDropdown({ onClose }: CartDropdownProps) {
                   </p>
                   <p className="text-xs text-secondary mt-0.5">{product.nameRu}</p>
                   <div className="flex items-center justify-between mt-2">
-                    {/* Quantity controls */}
                     <div className="flex items-center gap-2">
                       <button
                         onClick={() => updateQuantity(product.id, quantity - 1)}
