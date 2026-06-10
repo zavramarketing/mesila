@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <span className="text-2xl font-bold tracking-tight">MESILA</span>
             <p className="mt-4 text-white/70 max-w-md">
-              Kvaliteetsed mesindustarbed Eesti mesindajatele. Üle 25 aasta kogemus valdkonnas.
+              Kvaliteetsed mesindustarbed Eesti mesinikele. Üle 25 aasta kogemust valdkonnas.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/20 text-center text-white/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} Mesila. Kõik õigused kaitstud.</p>
+          <p>&copy; 2026 Mesila. Kõik õigused kaitstud.</p>
         </div>
       </div>
     </footer>
