@@ -179,7 +179,7 @@ export const products: Product[] = [
     categoryIcon: '🪵',
     description: 'Kvaliteetne põrandaplaat Dadant tarule. Ventilatsiooniavadega.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tarud-ja-raamid/taru-pohi.png',
   },
   {
     id: 'hive-roof',
@@ -191,7 +191,7 @@ export const products: Product[] = [
     categoryIcon: '🪵',
     description: 'Katuseplaadiga katus Dadant tarule. Kaitseb ilmastiku eest.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tarud-ja-raamid/metallkattega-tarukatus.png',
   },
   {
     id: 'dadant-frames-10pk',
@@ -203,7 +203,7 @@ export const products: Product[] = [
     categoryIcon: '🪵',
     description: 'Dadant mõõtmetega raamid, 10 tk pakis. Kvaliteetne puit.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tarud-ja-raamid/dadant-raamid-10tk.png',
   },
   {
     id: 'wax-foundation-10pk',
@@ -215,7 +215,7 @@ export const products: Product[] = [
     categoryIcon: '🪵',
     description: 'Mesilasvahast alusrullid raamidesse, 10 tükki pakis. Looduslik toode.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tarud-ja-raamid/karjepohhjad-10tk.png',
   },
   {
     id: 'queen-excluder',
@@ -227,7 +227,7 @@ export const products: Product[] = [
     categoryIcon: '🪵',
     description: 'Plastikust emaeraldusvõre. Hoiab ema tuumakorpusesse. Dadant mõõt.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tarud-ja-raamid/emaeraldusvore.png',
   },
 
   // Mee töötlemine
