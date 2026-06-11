@@ -303,7 +303,7 @@ export const products: Product[] = [
     categoryIcon: '🌿',
     description: 'Plastikust pealmissöötja mahutavusega 1.5L. Sobib siirupi jaoks. Dadant mõõt.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/sootmine/pealmissootja-1-5l.png',
   },
   {
     id: 'frame-feeder-2l',
@@ -315,7 +315,7 @@ export const products: Product[] = [
     categoryIcon: '🌿',
     description: 'Raami kujuline söötja mahutavusega 2L. Asetatakse taru sisse. Ujukiga.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/sootmine/raamsootja-2l.png',
   },
   {
     id: 'water-feeder',
@@ -327,7 +327,7 @@ export const products: Product[] = [
     categoryIcon: '🌿',
     description: 'Väljasöötja mesilaste joogivee jaoks. Plastikust kausike kaanega.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/sootmine/mesilaste-jootur.png',
   },
   {
     id: 'sugar-syrup-5l',
@@ -339,6 +339,6 @@ export const products: Product[] = [
     categoryIcon: '🌿',
     description: 'Valmis suhkrusiirupi kontsentraat mesilaste söötmiseks. 5L kanister. Segada veega.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/sootmine/suhkrusiirupi-kontsentraat-5l.png',
   },
 ];
