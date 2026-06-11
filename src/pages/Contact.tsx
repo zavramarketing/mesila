@@ -27,16 +27,7 @@ export default function Contact() {
 
   return (
     <div className="bg-cream min-h-screen">
-      {/* Header */}
-      <section className="bg-white border-b border-border py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary">
-            Kontakt — Võta meiega ühendust
-          </h1>
-        </div>
-      </section>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
