@@ -167,7 +167,7 @@ export const products: Product[] = [
     categoryIcon: '🪵',
     description: 'Dadant mõõtmetega tarukorpus kvaliteetsest männipuidust. Kokkupandav.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tarud-ja-raamid/dadant-taru-korpus.png',
   },
   {
     id: 'hive-bottom-board',
@@ -227,7 +227,7 @@ export const products: Product[] = [
     categoryIcon: '🪵',
     description: 'Plastikust emaeraldusvõre. Hoiab ema tuumakorpusesse. Dadant mõõt.',
     inStock: true,
-    image: '/products/tarud-ja-raamid/emaeraldusvore.png',
+    image: '/products/tarud-ja-raamid/emaeraldusvorg.png',
   },
 
   // Mee töötlemine
