@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-amber py-16 md:py-24 relative">
+      <section className="bg-amber py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
@@ -53,51 +53,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Honey drip - overlaps the section below */}
-        <div
-          className="absolute left-0 w-full z-10 pointer-events-none"
-          style={{ bottom: '-110px', height: '140px' }}
-        >
-          <svg
-            viewBox="0 0 1440 130"
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ display: 'block', width: '100%', height: '100%' }}
-          >
-            <path
-              fill="#E8960C"
-              d="M0,0 L1440,0 L1440,30 L1400,30
-              C1390,30 1372,108 1360,118 C1348,108 1330,30 1320,30
-              L1280,30
-              C1270,30 1252,95 1240,105 C1228,95 1210,30 1200,30
-              L1160,30
-              C1150,30 1132,122 1120,128 C1108,122 1090,30 1080,30
-              L1040,30
-              C1030,30 1012,82 1000,92 C988,82 970,30 960,30
-              L920,30
-              C910,30 892,112 880,118 C868,112 850,30 840,30
-              L800,30
-              C790,30 772,88 760,98 C748,88 730,30 720,30
-              L680,30
-              C670,30 652,118 640,125 C628,118 610,30 600,30
-              L560,30
-              C550,30 532,78 520,88 C508,78 490,30 480,30
-              L440,30
-              C430,30 412,105 400,115 C388,105 370,30 360,30
-              L320,30
-              C310,30 292,93 280,103 C268,93 250,30 240,30
-              L200,30
-              C190,30 172,118 160,125 C148,118 130,30 120,30
-              L80,30
-              C70,30 52,86 40,96 C28,86 10,30 0,30
-              Z"
-            />
-          </svg>
-        </div>
       </section>
 
       {/* Categories Section */}
-      <section className="pt-36 pb-16 md:pt-40 md:pb-20 bg-cream">
+      <section className="py-16 md:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Tootekategooriad</h2>
