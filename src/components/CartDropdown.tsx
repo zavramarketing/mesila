@@ -10,7 +10,7 @@ export default function CartDropdown({ onClose }: CartDropdownProps) {
   const { items, removeFromCart, updateQuantity, clearCart, totalPrice } = useCart();
 
   return (
-    <div className="absolute right-0 top-full mt-2 w-96 bg-white rounded-xl border border-border shadow-xl z-50">
+    <div className="w-full md:absolute md:right-0 md:top-full md:mt-2 md:w-96 bg-white rounded-xl border border-border shadow-xl z-50">
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-4 border-b border-border">
         <h3 className="font-bold text-primary text-lg">Minu ostukorv</h3>

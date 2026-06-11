@@ -55,14 +55,14 @@ export default function Shop() {
         </div>
 
         {/* Category Pills */}
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div className="flex gap-2 mb-8 overflow-x-auto pb-1 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap scrollbar-hide">
           <button
             onClick={() => {
               setActiveCategory('');
               searchParams.delete('kategooria');
               setSearchParams(searchParams);
             }}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+            className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeCategory === ''
                 ? 'bg-primary text-white'
                 : 'bg-white border border-border text-secondary hover:border-primary hover:text-primary'
@@ -74,7 +74,7 @@ export default function Shop() {
             <button
               key={category.id}
               onClick={() => handleCategoryClick(category.id)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeCategory === category.id
                   ? 'bg-primary text-white'
                   : 'bg-white border border-border text-secondary hover:border-primary hover:text-primary'

@@ -97,7 +97,7 @@ export default function Navbar() {
 
           {/* Mobile Cart Dropdown */}
           {cartOpen && (
-            <div className="md:hidden pb-2 relative">
+            <div className="md:hidden border-t border-border">
               <CartDropdown onClose={() => setCartOpen(false)} />
             </div>
           )}
