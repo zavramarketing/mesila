@@ -31,7 +31,7 @@ export const products: Product[] = [
     categoryIcon: '🧤',
     description: 'Täispikk mesindusülikond kahekordse puuvillase riidega. Kaugushaagid, kindad ja saapad tööks mesilas. Universalne suurus.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/kaitseriided/mesindusylikond.png',
   },
   {
     id: 'leather-gloves',
@@ -43,7 +43,7 @@ export const products: Product[] = [
     categoryIcon: '🧤',
     description: 'Paksud mesinduskindad kvaliteetsest nahast. Vastupidavad ja mugavad. Ükssuurus.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/kaitseriided/nahast-kindad.png',
   },
   {
     id: 'round-veil-helmet',
@@ -55,7 +55,7 @@ export const products: Product[] = [
     categoryIcon: '🧤',
     description: 'Ümmarguse võrguga kiiver mesilaste kaitseks. Ventileeritud disain. Reguleeritav suurus.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/kaitseriided/uummarguse-vorguga-kiiver.png',
   },
   {
     id: 'nitrile-gloves-100pk',
@@ -67,7 +67,7 @@ export const products: Product[] = [
     categoryIcon: '🧤',
     description: 'Ühekordsed nitriilkindad. 100 tk pakis. Saadaval suurustes M, L, XL.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/kaitseriided/nitriilkindad-100tk.png',
   },
   {
     id: 'ventilated-jacket',
@@ -79,7 +79,7 @@ export const products: Product[] = [
     categoryIcon: '🧤',
     description: 'Ventileeritud kuub suviseks tööks mesilas. Võrguotsikuga. Universalne suurus.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/kaitseriided/ventileeritav-mesindusjakk.png',
   },
 
   // Tööriistad ja tarvikud
