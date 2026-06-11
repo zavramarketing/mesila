@@ -29,7 +29,7 @@ export default function About() {
           </div>
           <div className="aspect-[4/3] rounded-xl overflow-hidden bg-white border border-border">
             <img
-              src="https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/meist.png"
               alt="Mesilased töötavad tarus"
               className="w-full h-full object-cover"
             />
