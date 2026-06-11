@@ -93,7 +93,7 @@ export const products: Product[] = [
     categoryIcon: '🔧',
     description: 'Raudne sirge tarulabidas roobastega. Vajalik tööriist igal mesindajal. Vastupidav.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tooriistad/sirge-tarulabidas.png',
   },
   {
     id: 'j-hive-tool',
@@ -105,7 +105,7 @@ export const products: Product[] = [
     categoryIcon: '🔧',
     description: 'J-kujuline tarulabitas mesilatarude hooldamiseks. Mugav käepide.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tooriistad/j-tarulabidas.png',
   },
   {
     id: 'bee-brush',
@@ -117,7 +117,7 @@ export const products: Product[] = [
     categoryIcon: '🔧',
     description: 'Pehme mesilashari looduslike karvadega. Raamidelt mesilaste eemaldamiseks.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tooriistad/mesilashari.png',
   },
   {
     id: 'small-smoker',
@@ -129,7 +129,7 @@ export const products: Product[] = [
     categoryIcon: '🔧',
     description: 'Väike roostevabast terasest suitsuti. Kompaktne ja mugav kasutada.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tooriistad/vaike-suitsuti.png',
   },
   {
     id: 'large-smoker',
@@ -141,7 +141,7 @@ export const products: Product[] = [
     categoryIcon: '🔧',
     description: 'Suur suitsuti roostevabast terasest. Võimas ja vastupidav. Suuremate tarude jaoks.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tooriistad/suur-suitsuti.png',
   },
   {
     id: 'swarm-box',
@@ -153,7 +153,7 @@ export const products: Product[] = [
     categoryIcon: '🔧',
     description: 'Kerge ventileeritud sülemikast parvede kogumiseks.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/tooriistad/sylemikast.png',
   },
 
   // Tarud ja raamid
