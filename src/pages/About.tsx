@@ -4,7 +4,14 @@ import { Truck, Clock, Phone, Mail } from 'lucide-react';
 export default function About() {
   return (
     <div className="bg-cream min-h-screen">
-      {/* Header */}
+      <section className="bg-white border-b border-border py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-primary">
+            Mesila lugu ja pühendumus mesinikele
+          </h1>
+          <p className="mt-2 text-secondary">Üle 25 aasta kogemust mesinduses.</p>
+        </div>
+      </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         {/* History Section */}
