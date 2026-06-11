@@ -241,7 +241,7 @@ export const products: Product[] = [
     categoryIcon: '⚙️',
     description: 'Käsitsi keeratav meevurr kahe raami jaoks. Roostevabast terasest. Kompaktne.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/mee-koristus/kasi-meevurr-2-raamiline.png',
   },
   {
     id: 'uncapping-knife',
@@ -253,7 +253,7 @@ export const products: Product[] = [
     categoryIcon: '⚙️',
     description: 'Käsitsi kaanetusnuga raamide avamiseks. Terav roostevaba tera.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/mee-koristus/kaanetusnuga.png',
   },
   {
     id: 'uncapping-fork',
@@ -265,7 +265,7 @@ export const products: Product[] = [
     categoryIcon: '⚙️',
     description: 'Kaanetushark raamide avamiseks. Terasest hambad. Mugav käepide.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/mee-koristus/kaanetushark.png',
   },
   {
     id: 'honey-filter-2layer',
@@ -277,7 +277,7 @@ export const products: Product[] = [
     categoryIcon: '⚙️',
     description: 'Kahekihiline meefilter lisandite eemaldamiseks. Roostevabast terasest võrk.',
     inStock: true,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/mee-koristus/kahekordne-meefilter.png',
   },
   {
     id: 'settling-tank-40l',
@@ -289,7 +289,7 @@ export const products: Product[] = [
     categoryIcon: '⚙️',
     description: '40L mee selitusnõu kraaniga. Lisandite settimiseks enne villimist.',
     inStock: false,
-    image: 'https://images.pexels.com/photos/1638284/pexels-photo-1638284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/products/mee-koristus/mee-selitusnõu-40l.png',
   },
 
   // Söötmine
