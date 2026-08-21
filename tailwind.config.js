@@ -12,6 +12,11 @@ export default {
         primary: '#1A1208',
         secondary: '#6B5B4E',
         border: '#EDE8E0',
+        success: {
+          DEFAULT: '#3F7D52',
+          light: '#E7F2EA',
+        },
+        danger: '#B94A3D',
       },
       fontFamily: {
         sans: ['DM Sans', 'system-ui', 'sans-serif'],

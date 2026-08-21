@@ -40,7 +40,7 @@ export default function About() {
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
             Asjatundjad, kes tunnevad mesinduse hingeelu
           </h2>
-          <div className="space-y-4 text-secondary leading-relaxed">
+          <div className="max-w-2xl space-y-4 text-secondary leading-relaxed">
             <p>
               Meie tiim koosneb endistest ja praegustest mesinikest, kes mõistavad mesinduse
               spetsiifikat, tarude hooldamise eripärasid ning vajadust usaldusväärsete tarvikute

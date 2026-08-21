@@ -71,7 +71,7 @@ export default function CartDropdown({ onClose }: CartDropdownProps) {
                       </span>
                       <button
                         onClick={() => removeFromCart(product.id)}
-                        className="text-secondary hover:text-red-400 transition-colors"
+                        className="text-secondary hover:text-danger transition-colors"
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>

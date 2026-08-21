@@ -121,7 +121,7 @@ export default function ProductDetail() {
                   onClick={handleAddToCart}
                   className={`flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-lg font-semibold transition-colors ${
                     added
-                      ? 'bg-green-100 text-green-700'
+                      ? 'bg-success-light text-success'
                       : 'bg-primary text-white hover:bg-primary/90'
                   }`}
                 >

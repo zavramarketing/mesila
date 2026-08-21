@@ -48,8 +48,8 @@ export default function Checkout() {
     return (
       <div className="bg-cream min-h-screen flex items-center justify-center px-4">
         <div className="bg-white rounded-2xl border border-border p-10 max-w-md w-full text-center">
-          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <Check className="w-8 h-8 text-green-600" />
+          <div className="w-16 h-16 bg-success-light rounded-full flex items-center justify-center mx-auto mb-6">
+            <Check className="w-8 h-8 text-success" />
           </div>
           <h1 className="text-2xl font-bold text-primary mb-3">Tellimus edastatud!</h1>
           <p className="text-secondary mb-2">

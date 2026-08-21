@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { Product } from '../data/products';
 
 export interface CartItem {
@@ -17,9 +17,27 @@ interface CartContextType {
 }
 
 const CartContext = createContext<CartContextType | null>(null);
+const STORAGE_KEY = 'mesila-cart';
+
+function readStoredCart(): CartItem[] {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
 
 export function CartProvider({ children }: { children: ReactNode }) {
-  const [items, setItems] = useState<CartItem[]>([]);
+  const [items, setItems] = useState<CartItem[]>(readStoredCart);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    } catch {
+      // localStorage unavailable (e.g. private mode) — cart still works in-memory
+    }
+  }, [items]);
 
   const addToCart = (product: Product) => {
     setItems((prev) => {

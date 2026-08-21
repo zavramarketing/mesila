@@ -66,7 +66,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               !product.inStock
                 ? 'bg-border text-secondary cursor-not-allowed'
                 : added
-                ? 'bg-green-100 text-green-700'
+                ? 'bg-success-light text-success'
                 : 'bg-primary text-white hover:bg-primary/90'
             }`}
           >
